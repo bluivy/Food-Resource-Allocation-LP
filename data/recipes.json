@@ -1,0 +1,271 @@
+[
+  {
+    "dish": "Sweet Madame",
+    "ingredients": {
+      "Fowl": 2,
+      "Sweet Flower": 2
+    }
+  },
+  {
+    "dish": "Mondstadt Hash Brown",
+    "ingredients": {
+      "Pinecone": 2,
+      "Potato": 1,
+      "Jam": 1
+    }
+  },
+  {
+    "dish": "Matsutake Meat Rolls",
+    "ingredients": {
+      "Matsutake": 2,
+      "Raw Meat": 2
+    }
+  },
+  {
+    "dish": "Chicken-Mushroom Skewer",
+    "ingredients": {
+      "Mushroom": 1,
+      "Fowl": 1
+    }
+  },
+  {
+    "dish": "Grilled Tiger Fish",
+    "ingredients": {
+      "Fish": 1,
+      "Pepper": 1
+    }
+  },
+  {
+    "dish": "Golden Tempered Jade",
+    "ingredients": {
+      "Fowl": 1,
+      "Salt": 1
+    }
+  },
+  {
+    "dish": "Universal Peace",
+    "ingredients": {
+      "Rice": 4,
+      "Lotus Head": 2,
+      "Carrot": 2,
+      "Berry": 2
+    }
+  },
+  {
+    "dish": "Squirrel Fish",
+    "ingredients": {
+      "Fish": 4,
+      "Tomato": 2,
+      "Flour": 2,
+      "Sugar": 1
+    }
+  },
+  {
+    "dish": "Crystal Shrimp",
+    "ingredients": {
+      "Rice": 3,
+      "Shrimp Meat": 3,
+      "Carrot": 2
+    }
+  },
+  {
+    "dish": "Barbeque Ribs",
+    "ingredients": {
+      "Raw Meat": 2,
+      "Pepper": 2,
+      "Marcotte": 1
+    }
+  },
+  {
+    "dish": "Dry-Braised Salted Fish",
+    "ingredients": {
+      "Fish": 1,
+      "Salt": 1
+    }
+  },
+  {
+    "dish": "Duck Confit",
+    "ingredients": {
+      "Fowl": 1,
+      "Potato": 1
+    }
+  },
+  {
+    "dish": "Fish With Cream Sauce",
+    "ingredients": {
+      "Fish": 3,
+      "Milk": 2,
+      "Mint": 1
+    }
+  },
+  {
+    "dish": "Grilled Fish in Mint Sauce",
+    "ingredients": {
+      "Fish": 1,
+      "Mint": 1
+    }
+  },
+  {
+    "dish": "Grilled Unagi Fillet",
+    "ingredients": {
+      "Unagi Meat": 3,
+      "Sugar": 1
+    }
+  },
+  {
+    "dish": "Lakkaberry Madame",
+    "ingredients": {
+      "Fowl": 2,
+      "Lakkaberry": 1,
+      "Smetana": 1
+    }
+  },
+  {
+    "dish": "Mint Jelly",
+    "ingredients": {
+      "Mint": 1,
+      "Sugar": 1
+    }
+  },
+  {
+    "dish": "Pita Pocket",
+    "ingredients": {
+      "Raw Meat": 3,
+      "Flour": 3,
+      "Tomato": 2,
+      "Milk": 2
+    }
+  },
+  {
+    "dish": "Radish Veggie Soup",
+    "ingredients": {
+      "Radish": 1,
+      "Mint": 1
+    }
+  },
+  {
+    "dish": "Smoked Fish Steak",
+    "ingredients": {
+      "Salt": 1,
+      "Fish": 1
+    }
+  },
+  {
+    "dish": "Soba Noodles",
+    "ingredients": {
+      "Flour": 1,
+      "Seagrass": 1
+    }
+  },
+  {
+    "dish": "Tasses Ragout",
+    "ingredients": {
+      "Tomato": 3,
+      "Salt": 2,
+      "Onion": 3
+    }
+  },
+  {
+    "dish": "Tea-Smoked Squab",
+    "ingredients": {
+      "Chenyu Adeptea": 2,
+      "Fowl": 2
+    }
+  },
+  {
+    "dish": "Tonkotsu Ramen",
+    "ingredients": {
+      "Raw Meat": 4,
+      "Flour": 3,
+      "Bamboo Shoot": 2,
+      "Bird Egg": 1
+    }
+  },
+  {
+    "dish": "Tricolor Dango",
+    "ingredients": {
+      "Milk": 2,
+      "Snapdragon": 2,
+      "Sakura Bloom": 2,
+      "Rice": 1
+    }
+  },
+  {
+    "dish": "Tuna Sushi",
+    "ingredients": {
+      "Fish": 3,
+      "Rice": 3
+    }
+  },
+  {
+    "dish": "Veggie Pot Soup",
+    "ingredients": {
+      "Cabbage": 3,
+      "Carrot": 3,
+      "Potato": 2,
+      "Smetana": 2
+    }
+  },
+  {
+    "dish": "Poisson Seafood Soup",
+    "ingredients": {
+      "Fish": 4,
+      "Tomato": 2,
+      "Mint": 2,
+      "Marcotte": 2
+    }
+  },
+  {
+    "dish": "Bulle Soufle",
+    "ingredients": {
+      "Bulle": 3,
+      "Bird Egg": 2,
+      "Milk": 2,
+      "Sugar": 1
+    }
+  },
+  {
+    "dish": "Flaming Red Bolognese",
+    "ingredients": {
+      "Flour": 2,
+      "Raw Meat": 2,
+      "Tomato": 1
+    }
+  },
+  {
+    "dish": "Northern Apple Stew",
+    "ingredients": {
+      "Raw Meat": 3,
+      "Apple": 3,
+      "Butter": 1,
+      "Pepper": 1
+    }
+  },
+  {
+    "dish": "Crispy Potato Shrimp Platter",
+    "ingredients": {
+      "Mint": 4,
+      "Shrimp Meat": 4,
+      "Potato": 3,
+      "Berry": 2
+    }
+  },
+  {
+    "dish": "Tahchin",
+    "ingredients": {
+      "Rice": 4,
+      "Fowl": 2,
+      "Fish": 2,
+      "Padisarah": 1
+    }
+  },
+  {
+    "dish": "Fine Tea, Full Moon",
+    "ingredients": {
+      "Chenyu Adeptea": 3,
+      "Bird Egg": 2,
+      "Flour": 2,
+      "Sugar": 1
+    }
+  }
+]
