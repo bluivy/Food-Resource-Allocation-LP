@@ -1,10 +1,10 @@
 # Food Resource Allocation LP
 
-A **Linear Programming (LP)** model for allocating limited ingredients across competing food products to maximise total HP output.
+A Linear Programming (LP) model for allocating limited ingredients across competing food products to maximise total HP output.
 
-The project uses food production from **Genshin Impact** as a practical case study for **resource allocation and mathematical optimisation**. The model determines which dishes to produce, and in what quantities, given a finite inventory of ingredients.
+The project uses food production from Genshin Impact as a practical case study for resource allocation and mathematical optimisation. The model determines which dishes to produce, and in what quantities, given a finite inventory of ingredients.
 
-The goal is not simply to select the dish with the highest HP. Each dish consumes a different combination of resources, so the optimal production plan depends on **resource availability, ingredient scarcity, and the opportunity cost of using each ingredient**.
+The goal is not simply to select the dish with the highest HP. Each dish consumes a different combination of resources, so the optimal production plan depends on resource availability, ingredient scarcity, and the opportunity cost of using each ingredient.
 
 ---
 
@@ -20,7 +20,7 @@ Each dish:
 
 The optimisation problem is:
 
-> **How should the available ingredients be allocated across dishes to maximise total HP?**
+> How should the available ingredients be allocated across dishes to maximise total HP?
 
 This is a resource allocation problem that can be formulated as a Linear Program.
 
@@ -57,95 +57,13 @@ $$
 x_j \geq 0
 $$
 
-The model is solved using **Gurobi**.
+The model is solved using Gurobi.
 
 ---
 
 ## Results
 
-The current model contains:
 
-* **34** possible dishes
-* **38** ingredient constraints
-* **99** non-zero recipe coefficients
-
-The optimal continuous solution produces approximately:
-
-**528,885 HP**
-
-Selected production quantities include:
-
-| Dish                    | Quantity |
-| ----------------------- | -------: |
-| Mondstadt Hash Brown    |       10 |
-| Matsutake Meat Rolls    |       56 |
-| Chicken-Mushroom Skewer |      110 |
-| Grilled Tiger Fish      |       18 |
-| Golden Tempered Jade    |       54 |
-| Barbeque Ribs           |       16 |
-| Duck Confit             |       12 |
-| Radish Veggie Soup      |      160 |
-| Soba Noodles            |        5 |
-| Tricolor Dango          |       25 |
-| Bulle Soufle            |        5 |
-
-The optimiser does **not** simply favour the dishes with the highest individual HP value. It balances the HP contribution of each dish against the ingredients consumed.
-
----
-
-## Resource Scarcity and Shadow Prices
-
-One of the more useful outputs of the model is the **shadow price** associated with each ingredient constraint.
-
-A shadow price estimates the marginal value of increasing the available quantity of an ingredient, within the range where the current LP basis remains valid.
-
-For example:
-
-| Ingredient | Shadow Price |
-| ---------- | -----------: |
-| Sugar      |        3,724 |
-| Flour      |        1,268 |
-| Mint       |        1,268 |
-| Salt       |        1,012 |
-| Fish       |          808 |
-| Fowl       |          808 |
-| Rice       |          606 |
-| Raw Meat   |          460 |
-| Smetana    |          315 |
-| Apple      |            0 |
-| Potato     |            0 |
-| Tomato     |            0 |
-
-This provides a different perspective from simply looking at the production plan.
-
-For example, **Sugar has a high shadow price**, indicating that additional sugar could increase the objective value significantly, subject to the model's sensitivity range.
-
-Conversely, an ingredient with a shadow price of **0** does not currently provide additional value to the objective if its availability is increased. It is not a binding bottleneck in the current solution.
-
-This is where the model moves beyond "which food gives the most HP?" and into **resource allocation analysis**.
-
----
-
-## Example: Why Isn't Every Good Dish Produced?
-
-A dish having a high HP value does not necessarily mean the optimiser will produce it.
-
-For example, **Veggie Pot Soup** provides useful HP but is not selected in the optimal solution.
-
-The dish requires:
-
-* Cabbage
-* Carrot
-* Potato
-* Smetana
-
-The model must consider what those ingredients could contribute when allocated to other dishes.
-
-This illustrates an important optimisation principle:
-
-> A resource has value not only because of what it produces directly, but because of the alternative opportunities lost when it is allocated elsewhere.
-
----
 
 ## Data Pipeline
 
@@ -196,12 +114,12 @@ Food-Resource-Allocation-LP/
 
 ## Technologies
 
-* **Python**
-* **Gurobi**
-* **Pandas**
-* **JSON**
-* **Linear Programming**
-* **Jupyter Notebook**
+* Python
+* Gurobi
+* Pandas
+* JSON
+* Linear Programming
+* Jupyter Notebook
 
 ---
 
@@ -277,6 +195,6 @@ Genshin Impact and its related intellectual property are owned by their respecti
 
 ## License
 
-The source code in this repository is licensed under the **MIT License**.
+The source code in this repository is licensed under the MIT License.
 
 See [`LICENSE`](LICENSE) for details.
