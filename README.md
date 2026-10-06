@@ -167,21 +167,6 @@ Inventory   → Available supply
 
 The optimisation framework remains largely the same.
 
----
-
-## Future Improvements
-
-Potential extensions include:
-
-* Integer programming to restrict production to whole dishes
-* Ingredient purchasing decisions
-* Ingredient costs and budget constraints
-* Minimum production requirements
-* Multiple objectives such as HP and cost
-* Scenario analysis under changing inventory levels
-* Automated sensitivity analysis
-* Visualisation of resource utilisation
-* Comparison between the LP and integer solutions
 
 ---
 
