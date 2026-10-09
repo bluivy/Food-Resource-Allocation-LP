@@ -1,15 +1,26 @@
 from pathlib import Path
 import pandas as pd
-from src.recipe_data import recipes
+import json
+#from src.recipe_data import recipes
 
 
-def load_recipe_data(save_csv=True):
+def load_recipe_data(recipe_data,save_csv=True):
+    
+    
+    recipes = []
+    with open(recipe_data) as file:
+        data = json.load(file)
+    
+    for itr in data:
+        recipes.append((itr['dish'], itr['ingredients']))
+
     # every unique ingredient across all recipes
     ingredients = sorted({
-        ingredient
-        for _, ingredient_dict in recipes
-        for ingredient in ingredient_dict
-    })
+            ingredient
+            for _, ingredient_dict in recipes
+            for ingredient in ingredient_dict
+        })
+
 
     dishes = [dish for dish, _ in recipes]
 
@@ -23,8 +34,8 @@ def load_recipe_data(save_csv=True):
     recipe_df = pd.DataFrame(rows).set_index("dish").T
 
     if save_csv:
-        path = Path("../Genshin_HP_Food_Optimizer_LP_Model/data/recipes.csv")
+        path = Path("../data/recipe.csv")
         path.parent.mkdir(parents=True, exist_ok=True)
         recipe_df.to_csv(path)   # index kept, see note below
 
-    return recipe_df, dishes, ingredients
+    return recipe_df, dishes, ingredients, recipes
