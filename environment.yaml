@@ -1,0 +1,10 @@
+name: food-lp
+channels:
+  - conda-forge
+dependencies:
+  - python>=3.11
+  - pandas>=3.0
+  - ipykernel
+  - pip
+  - pip:
+      - gurobipy>=13.0
