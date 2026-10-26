@@ -157,16 +157,15 @@ Food-Resource-Allocation-LP/
 │
 ├── data/
 │   ├── recipes.json
-│   ├── recipes.csv
+│   ├── recipes.json
 │   └── hp_data.json
 │
 ├── src/
 │   └── build_recipe_matrix.py
 │
-├── notebooks/
-│   └── optimisation.ipynb
+├── food_optimiser.ipynb
 │
-├── requirements.txt
+├── environment.yaml
 ├── README.md
 └── LICENSE
 ```
@@ -176,7 +175,7 @@ Food-Resource-Allocation-LP/
 ## Getting Started
 
 ```bash
-git clone https://github.com/<your-username>/Food-Resource-Allocation-LP.git
+git clone https://github.com/bluivy/Food-Resource-Allocation-LP.git
 cd Food-Resource-Allocation-LP
 pip install -r requirements.txt
 python src/build_recipe_matrix.py
